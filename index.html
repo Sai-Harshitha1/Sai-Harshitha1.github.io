@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>FORM</title>
+  </head>
+<style>
+  input#name:invalid:focus{
+  border:1px solid red;
+  }
+  </style>
+<body>
+ 
+     
+      <div class="d">
+      <form class="f" id="user-form">
+         <label for="name">Name</label>
+         <input type="text" name="name" id="name" placeholder="enter name" required>
+         <br>
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder="enter email" required>
+         <br>
+         <label for="password">Password</label>
+         <input type="password" name="password" id="password" placeholder="enterpassword">
+         <br>
+         <label for="date">Date of birth</label>
+         <input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy">
+         <br>
+         <input type="checkbox" id="acceptTerms" name="acceptTerms">
+         <label for="acceptTerms">Accept Terms & Conditions</label>
+       <br>
+         <button type="submit" >submit</button>
+     </form>    
+ 
+  <div
+  class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+<div class="mx-auto">
+    <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+    <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+</div>
+</div>
+</div>
+<script src="val.js"></script>
+</body>
+
+</html>
